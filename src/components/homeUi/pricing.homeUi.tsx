@@ -1,6 +1,4 @@
-'use client'
-
-import { Check, Zap, Star } from 'lucide-react'
+import { Check, Zap } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 const plans = [
