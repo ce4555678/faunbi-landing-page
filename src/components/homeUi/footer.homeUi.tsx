@@ -1,7 +1,3 @@
-'use client'
-
-import { Link } from '@tanstack/react-router'
-
 export default function FooterHomeUi() {
   const currentYear = new Date().getFullYear()
 
@@ -27,18 +23,18 @@ export default function FooterHomeUi() {
 
           {/* Links */}
           <nav className="flex flex-wrap gap-6 text-sm">
-            <Link
-              to="#features"
+            <a
+              href="#features"
               className="text-white/70 hover:text-cyan-400 transition-colors"
             >
               Funcionalidades
-            </Link>
-            <Link
-              to="#pricing"
+            </a>
+            <a
+              href="#pricing"
               className="text-white/70 hover:text-cyan-400 transition-colors"
             >
               Planos
-            </Link>
+            </a>
           </nav>
         </div>
 

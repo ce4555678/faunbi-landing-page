@@ -1,6 +1,3 @@
-'use client'
-
-import { Link } from '@tanstack/react-router'
 import { Button } from '@/components/ui/button'
 
 export default function HeaderHomeUi() {
@@ -15,18 +12,18 @@ export default function HeaderHomeUi() {
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link
-            to="#features"
+          <a
+            href="#features"
             className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
           >
             Funcionalidades
-          </Link>
-          <Link
-            to="#pricing"
+          </a>
+          <a
+            href="#pricing"
             className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors"
           >
             Planos
-          </Link>
+          </a>
         </nav>
 
         {/* CTA Button */}
