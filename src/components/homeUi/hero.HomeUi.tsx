@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Link } from '@tanstack/react-router'
 
 export default function HeroHomeUi() {
   return (
@@ -45,19 +46,21 @@ export default function HeroHomeUi() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full px-8 py-6 text-base font-semibold group shadow-lg shadow-blue-900/30"
-            >
-              Comece Agora
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
+            <Link to="/checkout">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-full px-8 py-6 text-base font-semibold group shadow-lg shadow-blue-900/30"
+              >
+                Comece Agora
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            {/* <Button
               size="lg"
               className="border-2 border-blue-500/50 text-blue-300 hover:bg-blue-500/10 rounded-full px-8 py-6 text-base font-semibold transition-all"
             >
               Ver Demo
-            </Button>
+            </Button> */}
           </div>
 
           {/* Trust indicators */}
