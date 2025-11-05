@@ -1,3 +1,5 @@
+import { Link } from '@tanstack/react-router'
+
 const steps = [
   {
     number: '1',
@@ -86,12 +88,12 @@ export default function HowItWorksHomeUi() {
           <p className="text-slate-400 text-sm mb-4">
             Tudo pronto em menos de 5 minutos — sem precisar de suporte técnico.
           </p>
-          <a
-            href="#planos"
+          <Link
+            to="/checkout"
             className="inline-block bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-blue-500/20"
           >
             Começar Agora
-          </a>
+          </Link>
         </div>
       </div>
     </section>

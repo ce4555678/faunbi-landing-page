@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { Link } from '@tanstack/react-router'
 
 export default function HeaderHomeUi() {
   return (
@@ -27,9 +28,11 @@ export default function HeaderHomeUi() {
         </nav>
 
         {/* CTA Button */}
-        <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6">
-          Comece Agora
-        </Button>
+        <Link to="/checkout">
+          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6">
+            Comece Agora
+          </Button>
+        </Link>
       </div>
     </header>
   )

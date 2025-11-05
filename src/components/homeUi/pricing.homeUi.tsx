@@ -1,5 +1,6 @@
 import { Check, Zap } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { Link } from '@tanstack/react-router'
 
 const plans = [
   {
@@ -82,7 +83,7 @@ export default function PricingHomeUi() {
             Escolha seu plano ideal
           </h2>
           <p className="text-lg text-slate-300">
-            Comece grátis, sem cartão. Cancele quando quiser.
+            Planos mensais flexíveis e suporte dedicado.
           </p>
         </div>
 
@@ -126,15 +127,17 @@ export default function PricingHomeUi() {
                   </div>
 
                   {/* CTA */}
-                  <Button
-                    className={`w-full rounded-full mb-10 font-semibold py-6 text-base transition-all ${
-                      plan.popular
-                        ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:shadow-lg'
-                        : 'bg-blue-800/70 hover:bg-blue-700 text-white border border-blue-500/30'
-                    }`}
-                  >
-                    {plan.popular ? 'Assinar Agora' : 'Testar Grátis'}
-                  </Button>
+                  <Link to="/checkout">
+                    <Button
+                      className={`w-full rounded-full mb-10 font-semibold py-6 text-base transition-all ${
+                        plan.popular
+                          ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:shadow-lg'
+                          : 'bg-blue-800/70 hover:bg-blue-700 text-white border border-blue-500/30'
+                      }`}
+                    >
+                      Assinar Agora
+                    </Button>
+                  </Link>
 
                   {/* Features */}
                   <ul className="space-y-4">

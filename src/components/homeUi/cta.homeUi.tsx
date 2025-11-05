@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import { Link } from '@tanstack/react-router'
 import { Sparkles } from 'lucide-react'
 
 export default function CTAHomeUi() {
@@ -30,12 +31,14 @@ export default function CTAHomeUi() {
           </p>
 
           {/* CTA principal */}
-          <Button
-            size="lg"
-            className="relative bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white font-semibold rounded-full px-12 py-6 text-lg shadow-lg hover:shadow-cyan-500/20 transition-all duration-300"
-          >
-            Comece Agora
-          </Button>
+          <Link to="/checkout">
+            <Button
+              size="lg"
+              className="relative bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-white font-semibold rounded-full px-12 py-6 text-lg shadow-lg hover:shadow-cyan-500/20 transition-all duration-300"
+            >
+              Comece Agora
+            </Button>
+          </Link>
 
           {/* Linha de confiança */}
           <p className="text-sm text-slate-400 mt-8">
